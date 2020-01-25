@@ -1,7 +1,7 @@
 let express = require('express')
 let app = express();
 let server = require('http').Server(app);
-let io = require('socket.io')(server, {path: '/connect'});
+let io = require('socket.io')(server);
 
 app.use(express.static('public'));
 
